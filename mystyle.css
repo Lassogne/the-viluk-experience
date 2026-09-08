@@ -1,0 +1,390 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+}
+
+.headerDiv {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 10vh;
+  margin: 0;
+  font-family: monospace;
+  text-align: center;
+}
+
+.leftCollumn {
+  margin-top: 10px;
+  width: 300px;
+}
+
+.rightCollumn {
+  margin-top: 10px;
+  width: 300px;
+}
+
+.menu {
+  font-weight: bold;
+  font-size: large;
+}
+
+.category {
+  margin-bottom: 10px;
+}
+
+.hr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  margin: 0px 4px;
+  width: fit-content;
+}
+
+.Button {
+  background-color: rgb(200, 200, 200);
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(90, 90, 90);
+  border-radius: 6px;
+  padding: 1px 5px;
+}
+
+.Button:hover {
+  background-color: #aaaaaa;
+}
+
+.Button:active {
+  background-color: rgb(90, 90, 90);
+  color: rgb(255, 255, 255);
+}
+
+.buyButton {
+  background-color: rgb(200, 200, 200);
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(90, 90, 90);
+  border-radius: 6px;
+  padding: 1px 5px;
+  width: 100px;
+}
+
+.buyButton:hover {
+  background-color: #aaaaaa;
+}
+
+.buyButton:active {
+  background-color: rgb(90, 90, 90);
+  color: rgb(255, 255, 255);
+}
+
+.div1:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 0.7s;
+}
+
+.middleCollumn {
+  margin-top: 10px;
+  width: 300px;
+}
+
+.upgradeButton {
+  background-color: rgb(240, 240, 240);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1, 4;
+  height: 5em;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  display: none;
+}
+
+.upgradeButton:hover {
+  background-color: rgb(225, 225, 225);
+  transition: 50ms;
+}
+
+.upgradeTitle {
+  margin: 0px auto;
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+
+.upgradeCost {
+  padding-left: 5px;
+  font-weight: normal;
+}
+
+.upgradeText {
+  color: rgb(49, 49, 49);
+  margin: 0px auto;
+}
+
+.upgradeBonus {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.middlerightCollumn {
+  margin-top: 10px;
+  width: 300px;
+}
+
+.testButton{
+  font-size: 18px;
+}
+.overviewStorageUpgrade{
+  display: flex;
+}
+.overviewStorageUpgradeIcon{
+border: none;
+background: none;
+cursor: pointer;
+}
+.overviewStorageUpgradeIcon:hover {
+  cursor: url("Graphics/Overview/Hammer.png")12 17, auto;
+}
+.overviewStorageUpgradeIcon:active {
+  cursor: url("Graphics/Overview/SwingedHammer.png")12 17, auto;
+}
+/* ----------------------------------------------------------------------- */
+/* Layout CSS code */
+.header {
+  position: absolute;
+  background-color: black;
+  height: 10vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.overview {
+  position: absolute;
+  background-color: rgb(209, 209, 209);
+  top: 10vh;
+  height: 70vh;
+  width: 83vw;
+  border: 10px solid rgb(70, 70, 70);
+  box-sizing: border-box;
+}
+
+.bottomOverview {
+  position: absolute;
+  background-color: rgb(21, 0, 41);
+  top: 80vh;
+  height: 20vh;
+  width: 83vw;
+  border: 10px solid rgb(70, 70, 70);
+  border-top: 0px solid;
+  box-sizing: border-box;
+}
+
+.factoryText {
+  color: white;
+  margin: 0% auto;
+  text-align: center;
+}
+/* ----------------------------------------------------------------------- */
+/* Manual clicking */
+.overviewClickArea {
+  background: none;
+  border: none;
+}
+.overviewForrest {
+  width: 10vw;  
+}
+.overviewRocks {
+  width: 10vw;  
+}
+.overviewForrest:hover {
+  cursor: url("Graphics/Overview/Axe.png")10 10, auto;
+}
+.overviewForrest:active {
+  cursor: url("Graphics/Overview/SwingedAxe.png")10 10, auto;
+}
+.overviewRocks:hover {
+  cursor: url("Graphics/Overview/Pickaxe.png")10 10, auto;
+}
+.overviewRocks:active {
+  cursor: url("Graphics/Overview/SwingedPickaxe.png")10 10, auto;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Stats CSS code */
+.statsWindow {
+  position: absolute;
+  background-color: rgb(30, 30, 30);
+  height: 45vh;
+  top: 10vh;
+  left: 83vw;
+  width: 17vw;
+  border-top: 10px solid rgb(70, 70, 70);
+  border-Bottom: 10px solid rgb(70, 70, 70);
+  border-right: 10px solid rgb(70, 70, 70);
+  border-left: 0px solid rgb(70, 70, 70);
+  box-sizing: border-box;
+}
+
+.statsSpaceDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statsFunds {
+  color: rgb(0, 200, 100);
+  font-size: 2vh;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.statsFundsSymbol {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 2vh;
+}
+
+.statsSubjectText {
+  color: white;
+  font-size: 2vh;
+  align-items: right;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.statsTexts {
+  color: white;
+  font-size: 2vh;
+  align-items: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.statsMoneyGroup {
+  display: flex;
+  align-items: center;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Upgrade CSS code */
+.upgradeWindow {
+  position: absolute;
+  background-color: rgb(22, 22, 22);
+  height: 45vh;
+  top: 55vh;
+  left: 83vw;
+  width: 17vw;
+  border-bottom: 10px solid rgb(70, 70, 70);
+  border-right: 10px solid rgb(70, 70, 70);
+  box-sizing: border-box;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.upgradeButtonTest {
+  position: relative;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 50%;
+}
+
+.upgradeButtonFrame {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.upgradeIcon {
+  position: absolute;
+  left: 1.35%;
+  top: 0.25vw;
+  width: 23%;
+}
+
+.upgradeTheme {
+  position: absolute;
+  left: 2.25%;
+  top: 0.25vw;
+  width: 21%;
+  border: solid 1px rgb(255, 0, 0);
+}
+
+.upgradeTitleTest {
+  position: absolute;
+  left: 24.7%;
+  top: 0.57vw;
+  font-size: 0.8vw;
+
+  color: #F6D76A;
+  font-weight: bold;
+}
+
+.upgradeDescriptionLocation {
+  position: absolute;
+  left: 25%;
+  top: 1.8vw;
+  font-size: 0.5vw;
+
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.upgradeDescriptionTest {
+  font-size: 0.5vw;
+
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.upgradeEffect {
+  font-size: 0.5vw;
+
+  color: #F6D76A;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+
+.upgradeCostIcon {
+  position: absolute;
+  left: 25%;
+  top: 2.7vw;
+  width: 7%;
+}
+
+.upgradeCostText {
+  position: absolute;
+  left: 31%;
+  top: 3vw;
+  font-size: 0.5vw;
+
+  color: #ff0000;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+
+.upgradeWindowTitle {
+  font-size: 0.8vw;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto auto;
+  padding: 0.4vw;
+}
+/* ----------------------------------------------------------------------- */

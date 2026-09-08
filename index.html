@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/png" href="Graphics/Favicon.png">
+    <link rel="stylesheet" href="mystyle.css">
+    <script type="module" src="JavaBandit.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <p class="factoryText">Header</p>
+    </div>
+    <div class="overview">
+        <p class="factoryText">Overview</p>
+        <button class="overviewClickArea" onclick="collectWood()">
+            <img src="Graphics/Overview/Forrest.svg" alt="Forrest SVG" draggable="false" class="overviewForrest">
+        </button>
+        <br>
+        <button class="overviewClickArea" onclick="collectStone()">
+            <img src="Graphics/Overview/Rocks.svg" alt="Rocks SVG" draggable="false" class="overviewRocks">
+        </button>
+        <br>
+        <br>
+        <br>
+        <div class="overviewStorageUpgrade">
+            <button class="overviewStorageUpgradeIcon" onclick="upgradeStorage()">
+                <img src="Graphics/Overview/StorageCrate.svg" alt="StorageCraet SVG" draggable="false">
+            </button>
+            <div>
+                <p class="testButton">
+                    <span>Storage level: </span>
+                    <span id="storageLevel"></span>
+                </p>
+                <p class="testButton">
+                    <span id="storagePrice"></span>
+                    <span> $</span>
+                </p>
+            </div>
+        </div>
+        <br>
+        <p class="testButton">Storage: <span id="currentStorage"></span> / <span id="maxStorage"></span> kg</p>
+        <br>
+        <div class="overviewStorageUpgrade">
+        <p class="testButton">Wood: <span id="woodStorage">0</span> kg</p>
+        <button onclick="sellWood()">Sell wood</button>
+        </div>
+        <div class="overviewStorageUpgrade">
+        <p class="testButton">Stone: <span id="stoneStorage">0</span> kg</p>
+        <button onclick="sellStone()">Sell stone</button>
+        </div>
+    </div>
+    <div class="bottomOverview">
+        <p class="factoryText">Bottom overview</p>
+    </div>
+    <div class="rightCollumnNew">
+        <div class="statsWindow">
+            <p class="upgradeWindowTitle">Stats</p>
+            <div class="statsSpaceDiv">
+                <p class="statsTexts">Bank Funds</p>
+                <div class="statsMoneyGroup">
+                    <img src="Graphics/Money.svg" alt="My SVG" class="statsFundsSymbol">
+                    <p id="ownedFunds" class="statsFunds">0</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="statsSpaceDiv">
+                <p class="statsTexts">Income/Sec</p>
+                <div class="statsMoneyGroup">
+                    <img src="Graphics/Money.svg" alt="My SVG" class="statsFundsSymbol">
+                    <p id="ownedFunds" class="statsFunds">0</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="statsSpaceDiv">
+                <p class="statsTexts">Expenses/Sec</p>
+                <div class="statsMoneyGroup">
+                    <img src="Graphics/Money.svg" alt="My SVG" class="statsFundsSymbol">
+                    <p id="ownedFunds" class="statsFunds">0</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="statsSpaceDiv">
+                <p class="statsTexts">Net/Sec</p>
+                <div class="statsMoneyGroup">
+                    <img src="Graphics/Money.svg" alt="My SVG" class="statsFundsSymbol">
+                    <p id="ownedFunds" class="statsFunds">0</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <p class="statsTexts">Add funds for testing</p>
+            <button onclick="add(500)">Add 500$</button>
+            <button onclick="add(1000)">Add 1.000$</button>
+            <button onclick="add(5000)">Add 5.000$</button>
+            <button onclick="add(100000)">Add 100.000$</button>
+            <br>
+            <br>
+            <p class="statsTexts">Remove funds for testing</p>
+            <button onclick="subtract(250)">Remove 250$</button>
+            <button onclick="subtract(500)">Remove 500$</button>
+            <button onclick="subtract(1000)">Remove 1.000$</button>
+        </div>
+        <div class="upgradeWindow">
+            <p class="upgradeWindowTitle">Unlocks available: <span id="availableUpgrades"></span></p>
+            <div id="upgradeContainer" class="upgradeContainerTest">
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="leftCollumn">
+            <div class="category">
+                <h class="menu">Buy Materials</h>
+                <hr>
+                </hr>
+                <button class="buyButton" onclick="buyWood()">Buy Wood</button>
+                <span id="woodPrice">0</span>
+                <span>$</span>
+                <br>
+                <br>
+                <button class="buyButton" onclick="buyStone()">Buy Stone</button>
+                <span id="stonePrice">0</span>
+                <span>$</span>
+                <br>
+                <br>
+                <button class="buyButton" onclick="buyMarble()">Buy Marble</button>
+                <span id="marblePrice">0</span>
+                <span>$</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
