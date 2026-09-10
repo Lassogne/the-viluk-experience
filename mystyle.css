@@ -324,7 +324,7 @@ cursor: pointer;
   left: 2.25%;
   top: 0.25vw;
   width: 21%;
-  /*border: solid 1px rgb(255, 0, 0);*/
+  border: solid 1px rgb(255, 0, 0);
 }
 
 .upgradeTitleTest {
