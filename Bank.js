@@ -20,9 +20,6 @@ export class Bank {
         this.#funds -= amount;
         document.getElementById("ownedFunds").textContent = this.formattedFunds;
     }
-    read() {
-        return this.#funds;
-    }
     get funds(){
         return this.#funds;
     }

@@ -103,7 +103,7 @@ function subtract(amount){
     }
 }
 function read() {
-    return bank.read();
+    return bank.funds;
 }
 
 // Export of functions to HTML
