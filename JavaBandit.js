@@ -102,6 +102,9 @@ function subtract(amount){
         bank.subtract(amount);
     }
 }
+function read() {
+    return bank.read();
+}
 
 // Export of functions to HTML
 window.upgradeStorage = upgradeStorage;
@@ -118,3 +121,4 @@ window.collectStone = collectStone;
 
 window.add = add;
 window.subtract = subtract;
+window.read = read;
