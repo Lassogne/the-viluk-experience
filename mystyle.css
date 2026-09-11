@@ -322,9 +322,9 @@ cursor: pointer;
 .upgradeTheme {
   position: absolute;
   left: 2.25%;
-  top: 0.25vw;
+  top: 0.5vw;
   width: 21%;
-  border: solid 1px rgb(255, 0, 0);
+  /*border: solid 1px rgb(255, 0, 0);*/
 }
 
 .upgradeTitleTest {

@@ -46,6 +46,7 @@ function showUpgrade() {
         for (let i = 0; i < (Upgrades.length); i++) {
             if (!Upgrades[i].created && (Upgrades[i].visibleThreshold <= bank.funds)) {
                 upgrades.createButton(i);
+                Upgrades[i].created = true;
             }
         }
     }, 100)

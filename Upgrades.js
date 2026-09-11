@@ -30,8 +30,6 @@ export class Upgrading{
 
         const button = wrapper.firstElementChild;
 
-        upgrade.created = true;
-
         // Mapping section
         if(upgrade.effect == 0) {
 
