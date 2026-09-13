@@ -390,3 +390,41 @@ cursor: pointer;
   padding: 0.4vw;
 }
 /* ----------------------------------------------------------------------- */
+.storageDiv {
+  display: flex;
+  width: fit-content;
+  background-color: rgb(182, 179, 179);
+  border: 5px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+.storageNumber {
+  display: flex;
+  align-items: center;
+  font-size: 1.4vw;
+  margin-left: 1vw;
+}
+.storageKg {
+  margin-left: 0.3vw;
+}
+
+.storageSellImg1 {
+  width: 4vw;
+}
+
+.storageSellImg2 {
+  width: 2vw;
+}
+
+.storageSellButton {
+  background: none;
+  border: none;
+  cursor: grab;
+}
+
+.storageSellButton:active {
+  background: none;
+  border: none;
+  cursor: grabbing;
+}

@@ -41,13 +41,25 @@
         <br>
         <p class="testButton">Storage: <span id="currentStorage"></span> / <span id="maxStorage"></span> kg</p>
         <br>
-        <div class="overviewStorageUpgrade">
-        <p class="testButton">Wood: <span id="woodStorage">0</span> kg</p>
-        <button onclick="sellWood()">Sell wood</button>
+        <div class="storageDiv">
+            <img class="storageSellImg1 " src="Graphics/Logs.svg" alt="Logs SVG" draggable="false">
+            <p class="storageNumber">
+                <span id="woodStorage">0</span>
+                <span class="storageKg"> kg</span>
+            </p>
+            <button class="storageSellButton" onclick="sellWood()">
+                <img class="storageSellImg2 " src="Graphics/Money Back.svg" alt="Money Back SVG" draggable="false">
+            </button>
         </div>
-        <div class="overviewStorageUpgrade">
-        <p class="testButton">Stone: <span id="stoneStorage">0</span> kg</p>
-        <button onclick="sellStone()">Sell stone</button>
+        <div class="storageDiv">
+            <img class="storageSellImg1 " src="Graphics/Stone.svg" alt="Stone SVG" draggable="false">
+            <p class="storageNumber">
+                <span id="stoneStorage">0</span>
+                <span class="storageKg"> kg</span>
+            </p>
+            <button class="storageSellButton" onclick="sellStone()">
+                <img class="storageSellImg2 " src="Graphics/Money Back.svg" alt="Money Back SVG" draggable="false">
+            </button>
         </div>
     </div>
     <div class="bottomOverview">
