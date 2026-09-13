@@ -305,6 +305,9 @@ cursor: pointer;
   padding: 0;
   opacity: 50%;
 }
+.upgradeButtonTest:hover {
+  filter: brightness(1.2);
+}
 
 .upgradeButtonFrame {
   display: block;
@@ -324,7 +327,6 @@ cursor: pointer;
   left: 2.25%;
   top: 0.5vw;
   width: 21%;
-  /*border: solid 1px rgb(255, 0, 0);*/
 }
 
 .upgradeTitleTest {
