@@ -44,7 +44,7 @@
         <div class="storageDiv">
             <img class="storageSellImg1 " src="Graphics/Logs.svg" alt="Logs SVG" draggable="false">
             <p class="storageNumber">
-                <span id="woodStorage">0</span>
+                <span class="woodStorage">0</span>
                 <span class="storageKg"> kg</span>
             </p>
             <button class="storageSellButton" onclick="sellWood()">
@@ -60,6 +60,46 @@
             <button class="storageSellButton" onclick="sellStone()">
                 <img class="storageSellImg2 " src="Graphics/Money Back.svg" alt="Money Back SVG" draggable="false">
             </button>
+        </div>
+        <div class="sellPopupMain">
+            <div class="sellPopupTopDiv">
+                <img class="sellPopupImage" src="Graphics/Logs.svg" alt="Logs SVG" draggable="false">
+                <div class="sellPopupTitleDiv">
+                    <p class="sellPopupTitle">Material</p>
+                    <p class="sellPopupSubTitle">
+                        <span>Available: </span>
+                        <span class="woodStorage">0</span>
+                        <span> kg</span>
+                    </p>
+                </div>
+                <div class="sellPopupOutcomeDiv">
+                    <img class="sellPopupOutcomeImg" src="Graphics/Money Back.svg" alt="Money Back SVG"
+                        draggable="false">
+                    <div class="sellPopupOutcomeDivText">
+                        <p class="sellPopupOutcomeTitle">Sells for</p>
+                        <p class="sellPopupOutcomeSubTitle">
+                            <span id="sellValue">0</span>
+                            <span> $</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sellPopupSliderDiv">
+                <input type="range" min="0" max="100" value="0" class="sellPopupSlider" id="myRange">
+                <p class="sellPopupSliderValue">
+                    <span id="sliderValue">0</span>
+                    <span> kg</span>
+                </p>
+            </div>
+            <div class="sellPopupBottomDiv">
+                <button class="sellPopupButton1">
+                    <p class="sellPopupButtonText">Cancel</p>
+                </button>
+                <button class="sellPopupButton2" onclick="sellWood()">
+                    <img class="sellPopupButtonImg" src="Graphics/Money Back.svg" alt="Money Back SVG">
+                    <p class="sellPopupButtonText">Sell</p>
+                </button>
+            </div>
         </div>
     </div>
     <div class="bottomOverview">

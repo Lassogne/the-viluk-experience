@@ -53,6 +53,18 @@ function showUpgrade() {
 }
 showUpgrade();
 
+const slider = document.getElementById("myRange");
+const sliderValue = document.getElementById("sliderValue");
+
+slider.addEventListener("input", () => {
+    sliderValue.textContent = slider.value;
+    slider.max = wood.storageUsed;
+    document.getElementById("sellValue").textContent = slider.value * 1;
+});
+
+
+
+
 function upgradeStorage() {
     storage.upgradeStorage();
 }
@@ -60,7 +72,9 @@ function upgradeStorage() {
 // Material handling
 function collectWood() {
     if (!wood.collect()) return;
-    document.getElementById("woodStorage").textContent = wood.storageUsed;    
+    document.querySelectorAll(".woodStorage").forEach(element => {
+        element.textContent = wood.storageUsed;
+    });
 }
 
 function collectStone() {
@@ -70,12 +84,16 @@ function collectStone() {
 
 function buyWood() {
     if (!wood.buy()) return;
-    document.getElementById("woodStorage").textContent = wood.storageUsed;
+    document.querySelectorAll(".woodStorage").forEach(element => {
+        element.textContent = wood.storageUsed;
+    });
 }
 
 function sellWood() {
     if(!wood.sell()) return;
-    document.getElementById("woodStorage").textContent = wood.storageUsed;    
+    document.querySelectorAll(".woodStorage").forEach(element => {
+        element.textContent = wood.storageUsed;
+    });  
 }
 
 function sellStone() {
